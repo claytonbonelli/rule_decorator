@@ -1,2 +1,4 @@
-# rule_decorator
-Decorator for business rules methods
+# Rule decorator
+
+###### By Clayton Boneli
+
