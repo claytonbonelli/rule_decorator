@@ -37,9 +37,6 @@ class MyRules1:
         print(3)
 
 
-rule.validate(MyRules1)
-
-
 class MyRules2:
 
     @rule.rule(3)
@@ -53,9 +50,6 @@ class MyRules2:
     @rule.rule(2)
     def example3(self):
         print(33)
-
-
-rule.validate(MyRules2)
 
 
 class MyRules3:
@@ -79,5 +73,7 @@ class MyRules3:
             print(333, "less than 10")
 
 
+rule.validate(MyRules1)
+rule.validate(MyRules2)
 rule.validate(MyRules3, data={'sum': 10})
-´´´
+```
