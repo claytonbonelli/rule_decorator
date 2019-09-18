@@ -23,7 +23,6 @@ import rule
 
 
 class MyRules1:
-
     @rule.rule
     def example1(self):
         print(1)
@@ -38,7 +37,6 @@ class MyRules1:
 
 
 class MyRules2:
-
     @rule.rule(3)
     def example1(self):
         print(11)
@@ -53,7 +51,6 @@ class MyRules2:
 
 
 class MyRules3:
-
     def __init__(self, *args, **kwargs):
         self.sum = kwargs['data']['sum']
 
