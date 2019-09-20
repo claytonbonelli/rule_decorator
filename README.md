@@ -10,7 +10,7 @@ Some applications have methods that are responsible for validating business rule
 
 Many applications are built so that one or more rules are validated by methods. The problem arises because the developer has to explicitly call each of these validation methods, but what if he creates a new method and forgets to make the call? What if the call is spread across various parts of the application?
 
-Another similar problem arises from the order of execution. How to call validation methods if they have to be executed in a predefined order? For example methodX must be executed before methodY. Again the programmer must include the call of the methods in the correct order, but what if the order changes? Pu if a new method that changes the order of execution is created?
+Another similar problem arises from the order of execution. How to call validation methods if they have to be executed in a predefined order? For example methodX must be executed before methodY. Again the programmer must include the call of the methods in the correct order, but what if the order changes? And if a new method that changes the order of execution is created?
 
 To take control of the methods explicit call from the developer and the call order, a decorator has been created, where the programmer can define which will be executed and, optionally, their execution order.
 
